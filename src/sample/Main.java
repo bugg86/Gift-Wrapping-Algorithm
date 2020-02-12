@@ -4,13 +4,12 @@ import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
-import javafx.geometry.Pos;
 import javafx.scene.Group;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
+import javafx.scene.paint.Color;
 
 public class Main extends Application {
 
@@ -24,7 +23,7 @@ public class Main extends Application {
         Group pointsGroup = new Group(points.getPoints());
         Group lines = new Group(points.getLines());
         pointsGroup.getChildren().addAll(lines, giftWrap);
-        primaryStage.setScene(new Scene(pointsGroup, 800, 600));
+        primaryStage.setScene(new Scene(pointsGroup, 800, 600, Color.BLACK));
         primaryStage.show();
 
         giftWrap.setOnAction(new EventHandler<ActionEvent>() {

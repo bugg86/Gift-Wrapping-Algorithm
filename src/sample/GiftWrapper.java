@@ -17,8 +17,8 @@ public class GiftWrapper {
             points[i] = new Circle();
             points[i].setCenterX(rand.nextInt(501));
             points[i].setCenterY(rand.nextInt(501));
-            points[i].setRadius(1);
-            points[i].setFill(Color.BLACK);
+            points[i].setRadius(2);
+            points[i].setFill(Color.WHITE);
         }
         findLeftMost();
         for (int i = 0; i < lines.length; i++) {
